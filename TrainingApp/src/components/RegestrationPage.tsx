@@ -1,12 +1,32 @@
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
-import Logo from '../assets/Logos/logo.png'
+import Logo from '../../assets/Logos/logo.png'
 
 import Login from './Login';
 import Signup from './Signup';
+import ForgotPassword from './ForgotPassword';
+
 
 export default function RegestrationPage() {
-  const [isPressed, setIsPressed] = useState(false);
+  const [ForgotPasswordButton, setForgotPasswordButton] = useState(false);
+   const [isPressed, setIsPressed] = useState(false);
+
+  function handel_Log_in_button_in_sign_up_component(){
+    setIsPressed(false);
+  }
+
+  function renderContent() {
+    if (!isPressed && !ForgotPasswordButton) {
+      return <Login ForgotPasswordButton = {setForgotPasswordButton}/>;
+    } 
+    else if(!isPressed && ForgotPasswordButton){
+      return  <ForgotPassword BackButton = {setForgotPasswordButton}/>
+    }
+     else {
+      return <Signup isPressed={handel_Log_in_button_in_sign_up_component} />;
+    }
+  }
+
   return (
     <View style = {styles.container}>
 
@@ -17,22 +37,25 @@ export default function RegestrationPage() {
        <View style = {styles.btnContainer}>
        
           <TouchableOpacity style ={styles.btnStyle}
-          onPress={()=>{setIsPressed(false)}} >
+          onPress={()=>{setIsPressed(false)
+            console.log(isPressed)}} >
           <Text style = {styles.btnText}>Login</Text>
           {!isPressed && <View style = {styles.underLine} />}
           
           </TouchableOpacity>
         
           <TouchableOpacity style ={styles.btnStyle}
-          onPress={()=>{setIsPressed(true)}} >
+          onPress={()=>{
+            setIsPressed(true);
+          console.log(isPressed)}} >
           <Text style = {styles.btnText}>Sign-up</Text>
           {isPressed && <View style = {styles.underLine} />}
           </TouchableOpacity>
        </View>
    </View>
-   <View style= {styles.thirdContainer}>
-   {!isPressed ?<Login /> : <Signup/>}
-   </View>
+   <View style={styles.thirdContainer}>
+  {renderContent()}
+</View>
     </View>
   )
 }// cheack platform

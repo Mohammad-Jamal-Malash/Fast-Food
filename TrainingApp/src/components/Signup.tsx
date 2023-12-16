@@ -1,8 +1,9 @@
 import { Image, SafeAreaView, StyleSheet, Text, View,TouchableOpacity,TextInput, ScrollView } from 'react-native'
 import React from 'react'
-import FaceBookLogo from '../assets/Logos/logos_facebook.png'
-import GoogleLogo from '../assets/Logos/GoogleLogo.png'
-export default function Signup() {
+import FaceBookLogo from '../../assets/Logos/logos_facebook.png'
+import GoogleLogo from '../../assets/Logos/GoogleLogo.png'
+
+export default function Signup({isPressed}:any) {
   return (
     <ScrollView >
 
@@ -44,7 +45,8 @@ export default function Signup() {
           </Text>
           <TouchableOpacity
            style = {styles.btn}
-           onPress={()=>{false}}>
+           onPress={()=>{
+            isPressed();}}>
             <Text style = {styles.txt2}>Login</Text>
             </TouchableOpacity>
             </View>

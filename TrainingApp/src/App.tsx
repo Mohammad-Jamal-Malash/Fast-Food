@@ -1,7 +1,10 @@
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-import RegestrationPage from '../components/RegestrationPage'
+import RegestrationPage from './components/RegestrationPage'
+
+
+
 
 export default function App() {
   return (

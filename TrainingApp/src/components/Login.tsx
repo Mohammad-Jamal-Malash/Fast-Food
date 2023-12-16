@@ -1,15 +1,12 @@
-import { Button, Image, Pressable, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React, { useState } from 'react'
-import FaceBookLogo from '../assets/Logos/FacebookLogo.png'
-import GoogleLogo from '../assets/Logos/GoogleLogo.png'
-import * as Yup from 'yup';
-export default function Login() {
-    const [userName, setUserName] = useState('');
-    const Validator  = Yup.object().shape({
-        userName: Yup.string()
-        .required("This feild is required").email('Email is Invalid')
-      });
- 
+import { Button, Image, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import FaceBookLogo from '../../assets/Logos/FacebookLogo.png'
+import GoogleLogo from '../../assets/Logos/GoogleLogo.png'
+
+// This var indicates that the forgot pass button is not clicked
+    //when opening the login page
+    //export let ForgotPasswordButton = false
+export default function Login({ForgotPasswordButton}:any) { 
+    
     return (
     <>
         <SafeAreaView  style = {styles.container}>
@@ -21,7 +18,10 @@ export default function Login() {
             style= {styles.textInput}
             placeholder='Password' 
             placeholderTextColor={'rgba(160, 160, 160, 0.60)'}/>
-            <TouchableOpacity>
+            <TouchableOpacity
+            onPress={()=>{
+               ForgotPasswordButton(true)
+            }}>
                 <Text style = {styles.forgotPassword}>Forgot password? </Text>
             </TouchableOpacity>
                 <TouchableOpacity style = {[styles.btnsStyle, styles.LoginBtn]}>
