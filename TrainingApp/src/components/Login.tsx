@@ -2,12 +2,23 @@ import { Button, Image, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpac
 import FaceBookLogo from '../../assets/Logos/FacebookLogo.png'
 import GoogleLogo from '../../assets/Logos/GoogleLogo.png'
 
-// This var indicates that the forgot pass button is not clicked
-    //when opening the login page
-    //export let ForgotPasswordButton = false
+import {RootStackParamList} from '../App'
+import { NativeStackScreenProps } from '@react-navigation/native-stack'
+
+//This hook is used to show athor way in the props thing
+import { useNavigation } from '@react-navigation/native'
+
+import {NativeStackNavigationProp} from '@react-navigation/native-stack'
+
+type LoginProps = NativeStackScreenProps<RootStackParamList,'Login'>
+
 export default function Login({ForgotPasswordButton}:any) { 
-    
-    return (
+   
+    //! Here i did not understand good but it is like onther way to navigate between bages,
+  //! using the Hook 'useNavigation' 
+  const navigation  = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
+  
+  return (
     <>
         <SafeAreaView  style = {styles.container}>
             <TextInput
@@ -24,7 +35,10 @@ export default function Login({ForgotPasswordButton}:any) {
             }}>
                 <Text style = {styles.forgotPassword}>Forgot password? </Text>
             </TouchableOpacity>
-                <TouchableOpacity style = {[styles.btnsStyle, styles.LoginBtn]}>
+                <TouchableOpacity style = {[styles.btnsStyle, styles.LoginBtn]}
+                onPress={()=>{
+                   navigation.replace('WelcomePage');
+                }}>
                     <Text style = {styles.LoginTxt}>Login</Text>
                 </TouchableOpacity>
                     <Text style = {styles.Or}> Or</Text>

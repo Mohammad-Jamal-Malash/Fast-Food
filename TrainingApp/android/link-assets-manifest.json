@@ -82,6 +82,142 @@
       "sha1": "594654ca331a2b85349e9fe36b87fdf9b86ff4c8"
     },
     {
+      "path": "assets/fonts/Metropolis-Black.otf",
+      "sha1": "0b806ce10e950793a547fcc23d6ce71df4104e96"
+    },
+    {
+      "path": "assets/fonts/Metropolis-BlackItalic.otf",
+      "sha1": "c12e1fac5030b42313a0a6201ca7c2456e3932f3"
+    },
+    {
+      "path": "assets/fonts/Metropolis-Bold.otf",
+      "sha1": "335e5e57450f52a95b5bc3cd03d91071ef389c28"
+    },
+    {
+      "path": "assets/fonts/Metropolis-BoldItalic.otf",
+      "sha1": "8a0a5118a8861e32f72dcf495bd73213013321f2"
+    },
+    {
+      "path": "assets/fonts/Metropolis-ExtraBold.otf",
+      "sha1": "5ba5282242a60d98632201da852da566f365398e"
+    },
+    {
+      "path": "assets/fonts/Metropolis-ExtraBoldItalic.otf",
+      "sha1": "c5551a34faff337f7b30d37d8e8c5259526c71e5"
+    },
+    {
+      "path": "assets/fonts/Metropolis-ExtraLight.otf",
+      "sha1": "6ca6abc086c1b75e676e93aa10abb32ebf4c0e81"
+    },
+    {
+      "path": "assets/fonts/Metropolis-ExtraLightItalic.otf",
+      "sha1": "d6e389e3b696c26e8b2db24ad35392875e0c6e59"
+    },
+    {
+      "path": "assets/fonts/Metropolis-Light.otf",
+      "sha1": "e6651a2af53a77acbc2d19220c5af80bbfcc65dc"
+    },
+    {
+      "path": "assets/fonts/Metropolis-LightItalic.otf",
+      "sha1": "0a7e8c943602a95a1b6797839186f7e548ce357a"
+    },
+    {
+      "path": "assets/fonts/Metropolis-Medium.otf",
+      "sha1": "8d5181b06452ce20ac337391dc60b9dd07b083de"
+    },
+    {
+      "path": "assets/fonts/Metropolis-MediumItalic.otf",
+      "sha1": "907defe2aa0deb9b5433e54d357d03c36bd45014"
+    },
+    {
+      "path": "assets/fonts/Metropolis-Regular.otf",
+      "sha1": "dc10ba3cd5aea203f7d0f5af99e72163514a55d5"
+    },
+    {
+      "path": "assets/fonts/Metropolis-RegularItalic.otf",
+      "sha1": "d7ace372605f2e657e339d0e6414589b26db0ae4"
+    },
+    {
+      "path": "assets/fonts/Metropolis-SemiBold.otf",
+      "sha1": "4ebfc059e586c91d024d359f0ed3fc64d9ec4d2c"
+    },
+    {
+      "path": "assets/fonts/Metropolis-SemiBoldItalic.otf",
+      "sha1": "0ce339361d193e3e18ac0949242942867a1b129f"
+    },
+    {
+      "path": "assets/fonts/Metropolis-Thin.otf",
+      "sha1": "37f2a7b036ac541011cb175c5197056ae814d98f"
+    },
+    {
+      "path": "assets/fonts/Metropolis-ThinItalic.otf",
+      "sha1": "ae9856f75446fa706fef916252d349d64d8a93ef"
+    },
+    {
+      "path": "assets/fonts/Nunito-Black.ttf",
+      "sha1": "01abc1142e597b9a7748eb2d14ff823d65a54f01"
+    },
+    {
+      "path": "assets/fonts/Nunito-BlackItalic.ttf",
+      "sha1": "f9d9f79f6d10505f4659294b9a8baf09b20cd71e"
+    },
+    {
+      "path": "assets/fonts/Nunito-Bold.ttf",
+      "sha1": "d8091536d0fab37a3239067f708a0221070835da"
+    },
+    {
+      "path": "assets/fonts/Nunito-BoldItalic.ttf",
+      "sha1": "0a317229386769448de8344da4dcaddef5150fd4"
+    },
+    {
+      "path": "assets/fonts/Nunito-ExtraBold.ttf",
+      "sha1": "67f6aa1374efae5fc8f457fb92f721f49ecd45ba"
+    },
+    {
+      "path": "assets/fonts/Nunito-ExtraBoldItalic.ttf",
+      "sha1": "c9e77f8ae4f167a389851f2e56dcbae1494e31bc"
+    },
+    {
+      "path": "assets/fonts/Nunito-ExtraLight.ttf",
+      "sha1": "4ddd754e262de6dceba31e08b7403849d37c0d8a"
+    },
+    {
+      "path": "assets/fonts/Nunito-ExtraLightItalic.ttf",
+      "sha1": "5fa8b333a480476105b142c034c7376ed3fb4d2d"
+    },
+    {
+      "path": "assets/fonts/Nunito-Italic.ttf",
+      "sha1": "8bd20205f1cfac7715f5f0f945cbd745c2709c80"
+    },
+    {
+      "path": "assets/fonts/Nunito-Light.ttf",
+      "sha1": "c570f483013f57db1a325ae1ddc2e11c115bb441"
+    },
+    {
+      "path": "assets/fonts/Nunito-LightItalic.ttf",
+      "sha1": "cbe38d47698ad165698243f6731a13a190da60fa"
+    },
+    {
+      "path": "assets/fonts/Nunito-Medium.ttf",
+      "sha1": "941255b6a8c1e2d286ed9613bd6b354e2423dad9"
+    },
+    {
+      "path": "assets/fonts/Nunito-MediumItalic.ttf",
+      "sha1": "1c2a822552942e5cba150201ac4e0a1e0f65d881"
+    },
+    {
+      "path": "assets/fonts/Nunito-Regular.ttf",
+      "sha1": "465c464793593babb53e51e2a56562cdd79c237d"
+    },
+    {
+      "path": "assets/fonts/Nunito-SemiBold.ttf",
+      "sha1": "047ca2a59c253520cc46b3506744fad6ef8192c6"
+    },
+    {
+      "path": "assets/fonts/Nunito-SemiBoldItalic.ttf",
+      "sha1": "d930314ed16c54fd734f85d3d45f17d988254578"
+    },
+    {
       "path": "assets/fonts/Poppins-Black.ttf",
       "sha1": "645e04c53c6b5b35bce654a811ebce16af8aa721"
     },
