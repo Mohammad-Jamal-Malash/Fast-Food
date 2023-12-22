@@ -7,12 +7,14 @@ import WelcomePage from './components/Screens/AfterLogin/WelcomePage'
 import {NavigationContainer} from '@react-navigation/native'
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import Login from './components/Login'
+import AfterWelcomParentPage from './components/Screens/AfterLogin/AfterWelcome/AfterWelcomParentPage'
 
 // This is not must do it is just for type safty shit
 export type RootStackParamList = {
   RegestrationPage: undefined;
   WelcomePage: undefined;
   Login:undefined;
+  AfterWelcomParentPage:undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -35,11 +37,16 @@ export default function App() {
              <Stack.Screen
             name='Login'
             component={Login} />
-          </Stack.Navigator>
 
+              <Stack.Screen
+            name = 'AfterWelcomParentPage'
+            component={AfterWelcomParentPage} />
+          </Stack.Navigator>
+      
         
         
         </SafeAreaView>
+        
         </NavigationContainer>
   )
 }

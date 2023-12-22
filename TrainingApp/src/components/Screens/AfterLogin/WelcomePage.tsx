@@ -6,16 +6,23 @@ import Logo from '../../../../assets/Logos/logo.svg'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../../../App'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Colors } from 'react-native/Libraries/NewAppScreen'
 
+
+//Navigation
+import { useNavigation } from '@react-navigation/native'
+import { NativeStackNavigationProp } from '@react-navigation/native-stack' 
 // For type saftye
 type WelcomePageProps = NativeStackScreenProps<RootStackParamList,'WelcomePage'>
 
-const WelcomePage = ({navigation}:WelcomePageProps) => {
+const WelcomePage = () => {
+  const navigation  = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
   return (
     <SafeAreaView style = {styles.container}>
       <View style = {styles.container1}>
-        <TouchableOpacity style= {styles.skip}>
+        <TouchableOpacity style= {styles.skip}
+        onPress={()=>{
+          navigation.navigate('AfterWelcomParentPage');
+        }}>
       <Text style = {styles.skipTxt} >SKIP {'>>  '}</Text>
         </TouchableOpacity>
       <View style = {styles.Logo}>  

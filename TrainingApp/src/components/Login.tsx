@@ -1,16 +1,16 @@
-import { Button, Image, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import {Image, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import FaceBookLogo from '../../assets/Logos/FacebookLogo.png'
 import GoogleLogo from '../../assets/Logos/GoogleLogo.png'
 
 import {RootStackParamList} from '../App'
-import { NativeStackScreenProps } from '@react-navigation/native-stack'
+//import { NativeStackScreenProps } from '@react-navigation/native-stack'
 
 //This hook is used to show athor way in the props thing
 import { useNavigation } from '@react-navigation/native'
 
 import {NativeStackNavigationProp} from '@react-navigation/native-stack'
 
-type LoginProps = NativeStackScreenProps<RootStackParamList,'Login'>
+//type LoginProps = NativeStackScreenProps<RootStackParamList,'Login'>
 
 export default function Login({ForgotPasswordButton}:any) { 
    
